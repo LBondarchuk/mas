@@ -1,0 +1,49 @@
+@import './MQ/breakpoints.scss';
+
+.baner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url("../../public/images/baner2.jpeg");
+  width: 100vw;
+  min-width: 350px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__button {
+    width: 390px;
+  }
+
+
+  & h1 {
+    font-size: 75px;
+    z-index: 100;
+    color: white;
+
+    @include sm {
+      font-size: 75px;
+    }
+
+    @include md {
+      font-size: 130px;
+    }
+
+ 
+
+    @include lg {
+      font-size: 150px;
+    }
+
+    @include xl {
+      font-size: 200px;
+    }
+  }
+
+  & h2 {
+    color: white;
+    text-align: center;
+  }
+}

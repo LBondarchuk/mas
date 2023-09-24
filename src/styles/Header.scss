@@ -1,0 +1,49 @@
+@import '../styles/utils/_extends';
+@import '../styles/utils/_variables';
+@import '../styles/MQ/breakpoints.scss';
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  box-sizing: border-box;
+  @extend .flex-center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  transition: 0.3s ease;
+  opacity: 0.95;
+
+    &__button {
+      @include sm {
+        left: 50px;
+        top: 400px;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &__scroll {
+      background-color: red;
+    }
+
+    @include sm {
+        padding-left: 50px;
+
+    }
+  
+}
+
+.menu-icon {
+  display: none;
+  z-index: 100;
+
+  @include sm {
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+  }
+}
+
+.shadow {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

@@ -1,0 +1,41 @@
+@import './utils/_mixins';
+@import './MQ/breakpoints.scss';
+
+.our-servises {
+  margin-bottom: 80px;
+ 
+  &__title {
+    @include text(60px, 900);
+    text-align: center;
+    padding: 40px;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 20px;
+    background-color: #fff;
+
+    @include sm{
+      flex-direction: column;
+    }
+
+    & img {
+      width: 50vw;
+
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
+
+  &__description {
+      text-align: center;
+      padding: 20px;
+      @include text (20px, 300);
+
+      & h2 {
+        @include text(40px, 900);
+        margin-bottom: 20px;
+      }
+  }
+}

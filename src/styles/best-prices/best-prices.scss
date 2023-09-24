@@ -1,0 +1,18 @@
+@import '../utils/_mixins';
+
+.best-prices {
+  margin-bottom: 100px;
+  &__title {
+    @include text(80px, 700);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 4%;
+  }
+}

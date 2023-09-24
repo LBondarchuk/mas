@@ -1,0 +1,29 @@
+@import './utils/_mixins';
+@import './MQ/breakpoints.scss';
+
+.types-massage {
+  background-color: rgb(244, 219, 223);
+  margin-bottom: 80px;
+  padding: 50px 0;
+ 
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+
+    @include sm {
+      gap: 70px;
+    }
+  }
+
+  &__title {
+    @include text (60px, 700);
+    padding: 20px 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}

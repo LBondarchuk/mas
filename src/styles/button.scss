@@ -1,0 +1,26 @@
+@import '../styles/utils/_variables';
+
+.button {
+  padding: 15px 10px;
+  width: 100%;
+  font-size: 20px;
+  background-color: $button-color;
+  border: 1px solid $button-color;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: transparent;
+    color: $button-color;
+  }
+}
+
+  .hovered {
+    background-color: transparent;
+    color: $button-color;
+
+    &:hover {
+      background-color: $button-color;
+      color: black;
+    }
+  }
+

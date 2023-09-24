@@ -1,0 +1,58 @@
+@import './MQ/breakpoints.scss';
+@import './utils/_mixins';
+
+.card {
+  width: 23%;
+  min-width: 272px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+
+  @include sm {
+    width: 90%;
+  }
+
+  @include md{
+    width: 40%;
+  }
+
+  @include lg {
+    width: 40%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+    
+  }
+
+  &__img{
+    width: 100%;
+    margin-bottom: 10px;
+    max-height:70vh;
+    transition: all 0.7s ease;
+
+    &:hover {
+      transform: scale(110%)
+    }
+  }
+
+  &__title {
+    @include text(40px, 700)
+  }
+
+  &__description {
+    text-align: center;
+    @include text(16px,300);
+    margin-bottom: 10px;
+  }
+
+
+  
+  
+}
