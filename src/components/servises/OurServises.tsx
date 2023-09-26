@@ -6,18 +6,18 @@ export const OurServises = () => {
       
       <h1 className="our-servises__title">Наші послуги чи якийсь текст</h1>
       <Servise 
-      title="Title"
-      description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis pariatur in nemo consequuntur quaerat cumque fugit unde amet error mollitia, esse beatae earum omnis. Similique ad veniam tempore suscipit odit"
+      title="Назва послуги"
+      description="Маса́ж — сукупність прийомів механічної і рефлекторної дії на тканини і органи, у вигляді розтирання, тиску, вібрації або погладжування, що проводяться безпосередньо на поверхні тіла людини, як руками, так і спеціальними апаратами, через повітряне, водне чи інше середовище, з метою досягнення лікувального ефекту. "
       img="images/servises/1.jpeg"
       />
       <Servise 
-      title="Title"
-      description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis pariatur in nemo consequuntur quaerat cumque fugit unde amet error mollitia, esse beatae earum omnis. Similique ad veniam tempore suscipit odit"
+      title="Назва послуги"
+      description="Маса́ж — сукупність прийомів механічної і рефлекторної дії на тканини і органи, у вигляді розтирання, тиску, вібрації або погладжування, що проводяться безпосередньо на поверхні тіла людини, як руками, так і спеціальними апаратами, через повітряне, водне чи інше середовище, з метою досягнення лікувального ефекту. "
       img="images/servises/1.jpeg"
       />
       <Servise 
-      title="Title"
-      description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis pariatur in nemo consequuntur quaerat cumque fugit unde amet error mollitia, esse beatae earum omnis. Similique ad veniam tempore suscipit odit"
+      title="Назва послуги"
+      description="Маса́ж — сукупність прийомів механічної і рефлекторної дії на тканини і органи, у вигляді розтирання, тиску, вібрації або погладжування, що проводяться безпосередньо на поверхні тіла людини, як руками, так і спеціальними апаратами, через повітряне, водне чи інше середовище, з метою досягнення лікувального ефекту. "
       img="images/servises/1.jpeg"
       />
     </section>

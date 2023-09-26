@@ -4,8 +4,8 @@ import { useScroll } from "../utils/hooks/useScrol"
 import { useState } from "react"
 export const Header = () => {
   const scroll = useScroll()
-  
   const [showNav, setShowNav] = useState(false)
+  
   return (
     <header 
       className={`header ${scroll && 'shadow'}`}

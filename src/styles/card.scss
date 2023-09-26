@@ -9,7 +9,7 @@
   margin-bottom: 30px;
 
   @include sm {
-    width: 90%;
+    width: 100%;
   }
 
   @include md{
@@ -48,7 +48,7 @@
 
   &__description {
     text-align: center;
-    @include text(16px,300);
+    @include text-second(16px,300);
     margin-bottom: 10px;
   }
 

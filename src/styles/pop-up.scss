@@ -1,0 +1,48 @@
+@import './utils/_variables';
+@import './MQ/breakpoints.scss';
+
+.pop-up {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 1000;
+
+  &__opacity {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(41, 41, 41);
+    opacity: 0.8;
+    
+    }
+
+  &__contant {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 3s ease;
+
+    width: 30vw;
+
+    @include sm {
+      width: 90vw;
+    }
+  
+    @include md {
+      width: 40vw;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer !important;
+
+    &:hover {
+      opacity: 0.8;
+      
+    }
+  }
+}

@@ -4,14 +4,16 @@
   padding: 15px 10px;
   width: 100%;
   font-size: 20px;
+  font-weight: 500;
+  color: $main-text-color;
   background-color: $button-color;
   border: 1px solid $button-color;
   transition: 0.3s ease;
-  color: black;
 
   &:hover {
     background-color: transparent;
     color: $button-color;
+    transform: scale(103%);
   }
 }
 
@@ -21,7 +23,8 @@
 
     &:hover {
       background-color: $button-color;
-      color: black;
+      color: $main-text-color;
+      transform: scale(105%);
     }
   }
 

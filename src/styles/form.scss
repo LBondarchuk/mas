@@ -1,0 +1,42 @@
+@import './utils/_variables';
+@import './utils/_mixins';
+
+.form {
+  opacity: 1;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: $secondary;
+  padding: 50px 10px;
+
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    letter-spacing:inherit;
+
+    @include text(20px, 500);
+  }
+
+  &__submit {
+    margin-left: 100%;
+    transform: translateX(-100%);
+    border-color: $main-color;
+    color: $main-color;
+    background-color: transparent;
+    border-radius: none;
+    padding: 10px 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: $main-color;
+      color: $main-text-color;
+      cursor: pointer;
+    }
+  }
+}

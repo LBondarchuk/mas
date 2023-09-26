@@ -1,5 +1,13 @@
-@mixin text ($size, $weight) {
+@import './_variables';
+
+@mixin text ($size, $weight, ) {
   font-size: $size;
   font-weight: $weight;
+  color: $main-text-color;
+}
 
+@mixin text-second ($size, $weight, ) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $secondary-text-color;
 }

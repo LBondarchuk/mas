@@ -21,8 +21,8 @@
   }
 
   &__content {
-   height: 80%;
-   width: 80%;
+    height: 80%;
+    width: 80%;
    border: 3px solid $secondary;
    transition: all 1s ease;
    color: transparent;
@@ -31,18 +31,19 @@
    &:hover {
     border-color: $main-color;
     transform: scale(110%);
-    color: black;
+    color: $main-text-color;
    }
   }
 
   &__title {
     padding: 10px;
-    @include text(40px, 700)
-    
+    font-size: 24px;
+    font-weight: 700;
   }
 
   &__description {
-    @include text(24px, 300);
+    font-size: 24px;
+    font-weight: 300;
     padding: 10px;
   
   }

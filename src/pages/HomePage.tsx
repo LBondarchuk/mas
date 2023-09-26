@@ -2,7 +2,6 @@ import { Baner } from "../components/Baner"
 import { BestPrices } from "../components/bestPrices/BestPrices"
 import { Footer } from "../components/Footer"
 import { Galery } from "../components/galery/Galery"
-import { Header } from "../components/Header"
 import { OpeningHours } from "../components/OpeningHours"
 import { OurServises } from "../components/servises/OurServises"
 import { TypesOfMAssage } from "../components/TypesOfMAssage"
@@ -12,7 +11,7 @@ export const HomePage = () => {
     <main 
     className="home"
     >
-    <Header />
+ 
     <Baner />
     <div className="container">
       <OurServises />
