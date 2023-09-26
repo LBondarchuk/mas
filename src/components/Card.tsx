@@ -3,7 +3,7 @@ import { Button } from "./Button"
 export const Card = () => {
   return (
     <div className="card">
-      <img src="/images/card.jpeg" alt="img" className="card__img"/>
+      <img src="images/card.jpeg" alt="img" className="card img"/>
       <div className="card__container">
         <h1 className="card__title">Масаж</h1>
         <div className="card__description">
