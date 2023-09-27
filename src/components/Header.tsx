@@ -15,7 +15,7 @@ export const Header = () => {
         src={`images/${!showNav ? "menu.png" : "close.png"}`}
         width="50" 
         height="50" 
-        alt="menu icon" 
+        alt="menu-icon" 
         className="menu-icon"
         onClick={() => setShowNav(!showNav)}
         />
