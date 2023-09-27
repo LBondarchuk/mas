@@ -19,7 +19,7 @@ export const Header = () => {
         className="menu-icon"
         onClick={() => setShowNav(!showNav)}
         />
-      <NavBar showNav={showNav}/>
+      <NavBar showNav={showNav} setShowNav={setShowNav}/>
       <div className="header__button" style={{position: `${showNav ? 'absolute' : "static"}`}}>
         <Button content="Замовити дзвінок" />
       </div>

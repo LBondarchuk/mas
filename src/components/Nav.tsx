@@ -1,10 +1,19 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 type Props = {
   showNav: boolean;
+  setShowNav: (bol: boolean) => void
 }
 
-const NavBar:React.FC<Props> = ({showNav}) => {
+const NavBar:React.FC<Props> = ({showNav, setShowNav}) => {
+  const location = useLocation().pathname;
+
+  useEffect(() => {
+    setShowNav(false)
+  }, [location, setShowNav])
+
+
   return (
     <nav className="nav">
       <ul 
