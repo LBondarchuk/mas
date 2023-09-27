@@ -1,0 +1,60 @@
+@import '../utils/_variables';
+@import '../utils/_mixins';
+@import '../MQ/breakpoints.scss';
+
+.second {
+  display: flex;
+  min-height: 50vh;
+  background-color: gray;
+
+  @include sm {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  &__title {
+    transform: rotate(-90deg);
+
+    @include sm {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    min-height: 50vh;
+    background-color: $main-color;
+    @include text(40px, 700);
+
+    @include sm {
+      width: 100%;
+      min-height: 50vh;
+    }
+  }
+
+  &__midle {
+    @include text (30px, 500);
+    padding: 30px 60px;
+    box-sizing: border-box;
+    width: 50%;
+    min-height: 50vh;
+    background-color: #fff;
+    @include sm {
+      width: 100%;
+      height: max-content;
+    }
+  }
+
+  &__right {
+    width: 25%;
+    min-height: 50vh;
+    background-color: $secondary;
+
+    @include sm {
+      display: none;
+    }
+  }
+}

@@ -36,7 +36,7 @@ export const Footer = () => {
         
       
          
-        <Link to="/">
+        <Link to="https://instagram.com/turbotaprotilo_energy?igshid=MzRlODBiNWFlZA==">
           <img src="images/insagram.png" alt="insagram" className="footer__social-media--item" width={50}/>
         </Link>
          

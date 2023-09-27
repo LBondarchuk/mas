@@ -16,8 +16,6 @@ export const OpeningHours = () => {
           </ul>
           <Button content="Заброонюй зараз" styles="button hovered"/>
       </div>
-     
-        
     </section>
   ) 
 }
