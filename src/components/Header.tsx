@@ -12,10 +12,10 @@ export const Header = () => {
       style={{padding: scroll ?  '10px 20px' : '', backgroundColor: scroll ? '#b8b2b4' : '' }}
       >
         <img 
-        src={`images/${!showNav ? "menu.svg" : "close.png"}`}
+        src={`images/${!showNav ? "menu.png" : "close.png"}`}
         width="50" 
         height="50" 
-        alt="close" 
+        alt="menu icon" 
         className="menu-icon"
         onClick={() => setShowNav(!showNav)}
         />
